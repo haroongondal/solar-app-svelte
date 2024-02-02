@@ -20,7 +20,7 @@
   import type { BuildingInsightsResponse } from '../solar';
   import { findSolarConfig } from '../utils';
   import BuildingInsightsSection from './BuildingInsightsSection.svelte';
-  import DataLayersSection from './DataLayersSection.svelte';
+  // import DataLayersSection from './DataLayersSection.svelte';
   import SolarPotentialSection from './SolarPotentialSection.svelte';
 
   export let location: google.maps.LatLng;
@@ -74,14 +74,14 @@
 
   {#if buildingInsights && configId !== undefined}
     <md-divider inset />
-    <DataLayersSection
+    <!-- <DataLayersSection
       bind:expandedSection
       bind:showPanels
       {googleMapsApiKey}
       {buildingInsights}
       {geometryLibrary}
       {map}
-    />
+    /> -->
 
     <md-divider inset />
     <SolarPotentialSection
